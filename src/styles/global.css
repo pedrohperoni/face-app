@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish&display=swap');
+
+:root{
+  --blue: #3C64B1;
+  --white: #FFFFFF;
+  --black: #373F41;
+  --grey: #737B7D;
+  --darkgrey: #373f41;
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grey);
+  color: var(--black);
+  font-family: 'Mulish', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* font-family: 'Lato',
+sans-serif;
+font-family: 'Mulish',
+sans-serif; */
