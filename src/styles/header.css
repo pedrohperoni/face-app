@@ -13,7 +13,7 @@ header{
 }
 
 .headerHyperlinks{
-  width: 80%;
+  width: auto;
   font-weight: 600;
   font-size: smaller;
   margin: auto;
@@ -25,13 +25,4 @@ header{
 .headerButton{
   width: 20%;
   margin: auto;
-}
-
-.signInButton{
-  font-family: 'Mulish',  sans-serif;
-  background-color: var(--blue);
-  color: var(--white);
-  width: 5.5rem;
-  height: 2.75rem;
-  border: 0;
 }

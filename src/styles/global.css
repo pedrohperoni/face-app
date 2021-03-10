@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish:wght@400;700;800&display=swap');
 
 :root{
   --blue: #3C64B1;
@@ -6,6 +6,7 @@
   --black: #373F41;
   --grey: #737B7D;
   --darkgrey: #373f41;
+  --lightgrey: #c4c4c4;
 }
 
 @media(max-width: 1080px) {
@@ -27,16 +28,37 @@
 }
 
 body {
-  background: var(--grey);
+  background: var(--lightgrey);
   color: var(--black);
   font-family: 'Mulish', sans-serif;
+  background-image: url('../background.jpg');
+  background-size: cover;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-/* font-family: 'Lato',
-sans-serif;
-font-family: 'Mulish',
-sans-serif; */
+
+label, input, button{
+  height: 2.75em;
+}
+
+button{
+  font-family: 'Mulish',
+  sans-serif;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 5.5rem;
+  border: 0;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 0.87rem;
+  font-weight: 800;
+}

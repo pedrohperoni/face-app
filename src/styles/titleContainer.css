@@ -1,0 +1,22 @@
+.titleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-height: 100%;
+}
+
+.titleContainer > h1{
+  margin: 10px 0 40px 0;
+  color: var(--black);
+}
+
+.titleContainer> h3 {
+  margin: 10px 0 40px 0;
+  color: var(--blue);
+}
+
+.titleContainer > button{
+  align-self: center;
+}

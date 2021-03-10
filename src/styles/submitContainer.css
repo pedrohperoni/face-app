@@ -1,0 +1,16 @@
+.submitContainer{
+  display: flex;
+  align-items: center;
+  background-color: var(--darkgrey);
+  height: 50vh;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.submitInput{
+  margin: auto 1rem;
+  border: 0;
+  padding: 1.1rem 3rem 1.1rem;
+  font-family: 'Mulish', sans-serif;
+  outline-width: 0;  
+}

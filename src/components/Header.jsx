@@ -4,7 +4,7 @@ export function Header(){
   return(
     <header>
     <div className='headerLogo'>
-      <h2>LOGO</h2>
+      <h2>faceApp</h2>
     </div>
     <div className='headerHyperlinks'>
       <a>Ranking</a>
