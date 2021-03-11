@@ -31,8 +31,6 @@ body {
   background: var(--lightgrey);
   color: var(--black);
   font-family: 'Mulish', sans-serif;
-  background-image: url('../background.jpg');
-  background-size: cover;
 }
 
 a {

@@ -7,7 +7,7 @@ export function Header(){
       <h2>faceApp</h2>
     </div>
     <div className='headerHyperlinks'>
-      <a>Ranking</a>
+      <a href='http://localhost:3000/'>Ranking</a>
       <a href='https://www.clarifai.com/'>API</a>
       <a href ='https://github.com/pedrohperoni'>github</a>
     </div>
