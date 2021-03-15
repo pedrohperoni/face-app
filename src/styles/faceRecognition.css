@@ -1,0 +1,20 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  margin: auto;
+}
+
+.faceRecognitionContainer{
+  position: absolute;
+  top: 5rem;
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #fff inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}

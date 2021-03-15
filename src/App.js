@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import { Header } from "./components/Header";
 import { MainContainer } from "./components/MainContainer";
+import { SubmitContainer } from "./components/SubmitContainer"
+import { FaceRecognition } from "./components/FaceRecognition"
 import './styles/global.css';
 import Clarifai from 'clarifai';
 
@@ -63,11 +65,18 @@ class App extends Component {
     return(
       <div>
         <Header />
-        <MainContainer
-        onInputChange={this.onInputChange} 
-        onButtonSubmit={this.onButtonSubmit}
-        box={this.state.box} 
-        imageUrl={this.state.imageUrl} 
+        {/* <MainContainer
+          box={this.state.box} 
+          imageUrl={this.state.imageUrl}
+          onInputChange={this.onInputChange} 
+          onButtonSubmit={this.onButtonSubmit} /> */}
+        <FaceRecognition 
+          box={this.state.box} 
+          imageUrl={this.state.imageUrl} 
+        />
+        <SubmitContainer
+          onInputChange={this.onInputChange} 
+          onButtonSubmit={this.onButtonSubmit}
         />
       </div>
     );
