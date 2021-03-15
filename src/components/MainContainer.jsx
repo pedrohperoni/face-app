@@ -14,7 +14,7 @@ export function MainContainer({ onInputChange, onButtonSubmit, imageUrl, box }){
             <input type='text' placeholder='Enter a photo URL' className='submitInput' onChange={onInputChange}></input>
             <button className='submitButton' onClick={onButtonSubmit}>Submit</button>
           </div>
-          {/* <div className='faceImageContainer'>
+          <div className='faceImageContainer'>
             <img id='inputImage' className='faceImage' src={imageUrl} alt='faceImage'></img>
             <div className='bounding-box' style={{
               top: box.topRow,
@@ -23,7 +23,7 @@ export function MainContainer({ onInputChange, onButtonSubmit, imageUrl, box }){
               left: box.leftCol
             }}>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
     </div>
