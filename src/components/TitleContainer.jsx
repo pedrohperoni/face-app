@@ -1,11 +1,15 @@
 import '../styles/titleContainer.css'
+import { TitleHeader } from './TitleHeader'
 
 export function TitleContainer(){
   return(
     <div className='titleContainer'>
-      <h3>FACE DETECTION APP</h3>
-      <h1>This app will detect faces in pictures, give it a try</h1>
-      <button className='titleButton'>Contact Us</button>
+      <div className='titleContent'>
+        <TitleHeader />
+        <h1>This app will detect<br></br> 
+        faces in pictures,<br></br> 
+        give it a try!</h1>
+      </div>
     </div>
   )
 }

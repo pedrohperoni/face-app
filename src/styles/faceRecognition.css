@@ -1,14 +1,15 @@
-.container{
+.faceContainer{
   display: flex;
   justify-content: center;
-  height: 50vh;
-  margin: auto;
+  flex-direction: column;
+  background-color: #fff;
+  height: inherit;
 }
 
 .faceRecognitionContainer{
-  position: absolute;
-  top: 5rem;
+  position: relative;
 }
+
 
 .bounding-box {
   position: absolute;

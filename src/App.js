@@ -1,8 +1,7 @@
 import { Component } from 'react';
-import { Header } from "./components/Header";
-import { MainContainer } from "./components/MainContainer";
 import { SubmitContainer } from "./components/SubmitContainer"
 import { FaceRecognition } from "./components/FaceRecognition"
+import { TitleContainer } from './components/TitleContainer';
 import './styles/global.css';
 import Clarifai from 'clarifai';
 
@@ -26,7 +25,6 @@ class App extends Component {
 
 
   calculateFaceLocation = (data) => {
-    console.log(data.outputs[0].data.regions[0].region_info.bounding_box)
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
     const image = document.getElementById('inputImage');
     const width = Number(image.width);
@@ -63,22 +61,17 @@ class App extends Component {
 
   render(){
     return(
-      <div>
-        <Header />
-        {/* <MainContainer
-          box={this.state.box} 
-          imageUrl={this.state.imageUrl}
-          onInputChange={this.onInputChange} 
-          onButtonSubmit={this.onButtonSubmit} /> */}
-        <FaceRecognition 
-          box={this.state.box} 
-          imageUrl={this.state.imageUrl} 
-        />
-        <SubmitContainer
-          onInputChange={this.onInputChange} 
-          onButtonSubmit={this.onButtonSubmit}
-        />
-      </div>
+        <div className='mainContainer'>
+          <TitleContainer />
+          <SubmitContainer
+            onInputChange={this.onInputChange} 
+            onButtonSubmit={this.onButtonSubmit}
+          />
+          <FaceRecognition 
+            box={this.state.box} 
+            imageUrl={this.state.imageUrl} 
+          />
+        </div>
     );
   }
 }

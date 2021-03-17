@@ -1,23 +1,29 @@
 .titleContainer{
   display: flex;
+  justify-content: center;
+  background-color: var(--black);
+  height: inherit;
+  padding: 10px 40px 20px 40px; 
+  width: 40%;
+}
+
+.titleContent{
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 50vh;
+  padding: 1.1rem 3rem 1.1rem;
   width: 80vh;
 }
 
-.titleContainer > h1{
+.titleContent > h1{
   margin: 10px 0 40px 0;
-  color: var(--black);
+  color: var(--white);
 }
 
-.titleContainer> h3 {
-  margin: 10px 0 40px 0;
-  color: var(--blue);
+.titleContent > h3 {
+  color: var(--white);
 }
 
-.titleContainer > button{
+.titleContent > button{
   align-self: center;
 }

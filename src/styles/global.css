@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Tinos&display=swap');
 
 :root{
-  --blue: #3C64B1;
   --white: #FFFFFF;
-  --black: #373F41;
+  --black: #111216;
   --grey: #737B7D;
-  --darkgrey: #373f41;
-  --lightgrey: #c4c4c4;
+  --lightgrey: #E8E8E9;
+  --salmon: #CF8F7A;
 }
 
 @media(max-width: 1080px) {
@@ -28,9 +27,9 @@
 }
 
 body {
-  background: var(--lightgrey);
+  background: var(--salmon);
   color: var(--black);
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -43,20 +42,25 @@ label, input, button{
 }
 
 button{
-  font-family: 'Mulish',
-  sans-serif;
-  background-color: var(--blue);
-  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--lightgrey);
   width: 5.5rem;
   border: 0;
 }
 
 h1 {
+  font-family: 'Tinos', serif;
   font-size: 2.75rem;
-  font-weight: 700;
 }
 
 h3{
   font-size: 0.87rem;
-  font-weight: 800;
+}
+
+.mainContainer{
+  background-color: red;
+  height: 100vh;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
 }
