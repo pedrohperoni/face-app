@@ -33,15 +33,14 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-label, input, button{
+label, input, button, a{
   height: 2.75em;
 }
 
-button{
+button, a{
   font-family: 'Montserrat', sans-serif;
   color: var(--lightgrey);
   width: 5.5rem;

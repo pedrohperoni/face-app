@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { FaceRecognition } from "./components/FaceRecognition"
 import { TitleContainer } from './components/TitleContainer';
+import { TitleHeader } from './components/TitleHeader'
 import './styles/global.css';
 import Clarifai from 'clarifai';
 
@@ -62,6 +63,7 @@ class App extends Component {
 
     return(
         <div className='mainContainer'>
+          <TitleHeader />
           <TitleContainer
             onInputChange={this.onInputChange} 
             onButtonSubmit={this.onButtonSubmit}
