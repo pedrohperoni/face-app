@@ -29,3 +29,14 @@
   height: 50px;
   margin-right: 10px;
 }
+
+@media (max-width: 800px){
+  .titleHeader{
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .logoContainer{
+    padding-bottom: 30px;
+  }
+}

@@ -11,8 +11,9 @@ export function TitleHeader(){
         </h3>
         </div>
       <div className="buttonsContainer">
-        <a href='https://www.clarifai.com/'>clarifai API</a>
+        <a href='https://www.clarifai.com/'>API</a>
         <a href ='https://github.com/pedrohperoni'>github</a>
+        <a href ='https://unsplash.com/s/photos/people'> Unsplash </a>
       </div>
     </div>
   )

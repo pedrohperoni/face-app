@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   background-color: var(--black);
-  height: 100%;
-  padding: 10px 40px 20px 40px; 
+  height: 90%;
+  padding: 10px 40px 0px 40px; 
   width: 100%;
 }
 
 .titleContent{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1.1rem 3rem 1.1rem;
   max-width: 100%;
 }
@@ -26,14 +26,6 @@
 
 .submitContainer {
   display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 10px;
-  flex-grow: 4;
-}
-
-.submitContent {
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -41,7 +33,7 @@
   max-width: 100%;
 }
 
-.submitContent > button {
+.submitContainer > button {
   background-color: var(--black);
   border-style: solid;
   border-width: 1px;

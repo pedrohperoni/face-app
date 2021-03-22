@@ -15,7 +15,8 @@ class App extends Component {
     this.state= {
       input: '',
       imageUrl: '',
-      box: '',
+      box: [],
+      faceCount: '',
     }
   }
 
@@ -24,16 +25,29 @@ class App extends Component {
   // bounding_box return the percentages of the face (location)
 
 
-  calculateFaceLocation = (data) => {
-    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+ calculateFaceLocation = (data) => {
     const image = document.getElementById('inputImage');
     const width = Number(image.width);
     const height = Number(image.height);
-    return {
-      leftCol: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
+    if (data.outputs[0].data.regions !== undefined ) {
+      return data.outputs[0].data.regions.map(face => {
+        const clarifaiFace = face.region_info.bounding_box;
+        return {
+          leftCol: clarifaiFace.left_col * width,
+          topRow: clarifaiFace.top_row * height,
+          rightCol: width - (clarifaiFace.right_col * width),
+          bottomRow: height - (clarifaiFace.bottom_row * height)
+        }
+      });
+    }
+  }
+
+  getNumOfFaces = (data) => {
+    if (data.outputs[0].data.regions !== undefined) {
+        const faceCount = Object.keys(data.outputs[0].data.regions).length;
+        this.setState({faceCount: faceCount + ' faces found!'});
+    } else {
+        this.setState({faceCount: '0 faces found!'});
     }
   }
 
@@ -49,15 +63,21 @@ class App extends Component {
   // return the object of the function (leftCol, topRow, rightCol, bottomRow)
   // the object goes into displayFaceBox
 
-  onButtonSubmit = () => {
-    this.setState({imageUrl: this.state.input})
+ onButtonSubmit = () => {
+    this.setState({imageUrl: this.state.input});
     app.models
-      .predict(
-        Clarifai.FACE_DETECT_MODEL,
-        this.state.input)
-      .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
-      .catch(err => console.log(err))
-    }
+    .predict(
+      Clarifai.FACE_DETECT_MODEL,
+      this.state.input)
+    .then( response => {
+        this.displayFaceBox(this.calculateFaceLocation(response))
+        return response;
+      })
+    .then(response => {
+      this.getNumOfFaces(response)
+    })
+    .catch (err => console.log(err));
+  }
 
   render(){
 
@@ -71,7 +91,8 @@ class App extends Component {
             />
           <FaceRecognition 
             box={this.state.box} 
-            imageUrl={this.state.imageUrl} 
+            imageUrl={this.state.imageUrl}
+            faceCount={this.state.faceCount}
           />
         </div>
     );

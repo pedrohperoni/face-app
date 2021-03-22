@@ -11,6 +11,7 @@
 
 .faceRecognitionContainer{
   position: relative;
+  margin: 10px 0 50px;
 }
 
 
@@ -25,6 +26,18 @@
 
 #inputImage{
   height: auto;
-  width: 400px;
+  width: 390px;
+  border-radius: 10px;
+}
+
+.faceCounter{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 820px){
+  #inputImage{
+    width: 500px;
+  }
 }
 
