@@ -58,9 +58,14 @@ h3{
 }
 
 .mainContainer{
-  background-color: red;
-  height: 100vh;
+  height: 85vh;
   margin: 40px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px){
+  .mainContainer{
+    flex-direction: column;
+  }
 }

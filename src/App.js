@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { SubmitContainer } from "./components/SubmitContainer"
 import { FaceRecognition } from "./components/FaceRecognition"
 import { TitleContainer } from './components/TitleContainer';
 import './styles/global.css';
@@ -60,13 +59,14 @@ class App extends Component {
     }
 
   render(){
+
     return(
         <div className='mainContainer'>
-          <TitleContainer />
-          <SubmitContainer
+          <TitleContainer
             onInputChange={this.onInputChange} 
             onButtonSubmit={this.onButtonSubmit}
-          />
+
+            />
           <FaceRecognition 
             box={this.state.box} 
             imageUrl={this.state.imageUrl} 
