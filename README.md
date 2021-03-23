@@ -13,11 +13,11 @@ Project developed to study React components, state and props and implementation 
 ## Project Status
 This project is fully functional but some features can be added, such as the ability for the user to upload their own images or photos. The functionality of the API can also be further explored, 
 
-## Screen Shots
-<img src="https://github.com/pedrohperoni/face-app/github/screenshot.png" alt="ss">
-<img src="https://github.com/pedrohperoni/face-app/github/screenshot1.png" alt="ss">
-<img src="https://github.com/pedrohperoni/face-app/github/screenshot2.png" alt="ss">
-<img src="https://github.com/pedrohperoni/face-app/github/screenshot3.png" alt="ss">
+## Screenshots
+![test]<img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot.png" alt="ss">
+<img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot1.png" alt="ss">
+<img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot2.png" alt="ss">
+<img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot3.png" alt="ss">
 ## Technologies Used
 
 * [React](https://reactjs.org/)
