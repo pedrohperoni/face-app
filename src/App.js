@@ -5,10 +5,10 @@ import { TitleHeader } from './components/TitleHeader'
 import './styles/global.css';
 import Clarifai from 'clarifai';
 
-const apiKey = process.env.REACT_APP_CLARIFAI_API_KEY;
+// const apiKey = process.env.REACT_APP_CLARIFAI_API_KEY;
 
 const app = new Clarifai.App({
-  apiKey: apiKey
+  apiKey: 'ee88c4fa2e7c4342a739424ea00e05ca'
 });
 
 class App extends Component {
