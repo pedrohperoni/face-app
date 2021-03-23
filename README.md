@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/pedrohperoni/face-app/">
-    <img src="https://github.com/pedrohperoni/face-app/github/face-recognition.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/pedrohperoni/face-app/blob/master/github/face-recognition.png" alt="Logo" width="80" height="80">
   </a>
   
   <h3 align="center">faceApp🕵️‍</h3>
