@@ -5,7 +5,7 @@
   </a>
   
   <h3 align="center">faceApp</h3>
-  <h1 align="center">Live App -> https://faceapp.vercel.app/ </h1>
+  <h4 align="center">Live App -> https://faceapp.vercel.app/ </h4>
 
 
 A facial recognition application used to detect, count and highlight people's faces in images, built with React, Javascript and CSS.
