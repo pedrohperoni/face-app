@@ -19,6 +19,7 @@ This project is fully functional but some features can be added, such as the abi
 <img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot1.png" alt="ss">
 <img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot2.png" alt="ss">
 <img src="https://github.com/pedrohperoni/face-app/blob/master/github/screenshot3.png" alt="ss">
+
 ## Technologies Used
 
 * [React](https://reactjs.org/)
