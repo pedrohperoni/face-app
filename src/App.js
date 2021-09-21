@@ -5,7 +5,7 @@ import { TitleHeader } from './components/TitleHeader'
 import './styles/global.css';
 import Clarifai from 'clarifai';
 
-// const apiKey = process.env.REACT_APP_CLARIFAI_API_KEY;
+
 
 const app = new Clarifai.App({
   apiKey: 'ee88c4fa2e7c4342a739424ea00e05ca'
@@ -22,9 +22,7 @@ class App extends Component {
     }
   }
 
-  // draw the square on the faces, the array comes from the API
-  // then get the id trough the DOM to add the squares
-  // bounding_box return the percentages of the face (location)
+
 
 
  calculateFaceLocation = (data) => {
@@ -60,10 +58,6 @@ class App extends Component {
   onInputChange = (event) => {
     this.setState({input: event.target.value});
   }
-
-  // this.calculateFaceLocation takes the response,
-  // return the object of the function (leftCol, topRow, rightCol, bottomRow)
-  // the object goes into displayFaceBox
 
  onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
