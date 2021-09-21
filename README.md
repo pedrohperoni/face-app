@@ -17,7 +17,6 @@ This project is fully functional but some features can be added, such as the abi
 ## Technologies Used
 
 * [React](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en/)
 * [Javascript](https://www.javascript.com/)
 * [clarifai API](https://www.clarifai.com/)
 
